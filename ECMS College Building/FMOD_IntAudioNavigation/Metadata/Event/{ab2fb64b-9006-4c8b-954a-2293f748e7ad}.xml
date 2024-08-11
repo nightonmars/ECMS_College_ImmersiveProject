@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Event" id="{ab2fb64b-9006-4c8b-954a-2293f748e7ad}">
+		<property name="name">
+			<value>FacilitiesSatellite</value>
+		</property>
+		<property name="outputFormat">
+			<value>2</value>
+		</property>
+		<relationship name="folder">
+			<destination>{969a38b5-28f1-4a5d-8e96-f24ee4bbc248}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{22f70930-6431-4e7a-bc92-cf044bf1efbc}</destination>
+		</relationship>
+		<relationship name="masterTrack">
+			<destination>{19e05d12-f0f4-4866-86cc-99ffd190290b}</destination>
+		</relationship>
+		<relationship name="mixerInput">
+			<destination>{da7c9b4b-56ea-426f-b02d-a4f4b63daf9a}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{f343f155-39fc-4445-8c05-0e822238f760}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{26ebfb31-c40d-4db2-9c4c-75b23b885f01}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{c4f45b80-30a0-419e-b9de-d43f1151c6d2}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{4854d414-87f9-4980-bf13-2e7598425b6e}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixer" id="{22f70930-6431-4e7a-bc92-cf044bf1efbc}">
+		<relationship name="masterBus">
+			<destination>{182650ca-2131-4664-b3b7-9b0a9267886e}</destination>
+		</relationship>
+	</object>
+	<object class="MasterTrack" id="{19e05d12-f0f4-4866-86cc-99ffd190290b}">
+		<relationship name="mixerGroup">
+			<destination>{182650ca-2131-4664-b3b7-9b0a9267886e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerInput" id="{da7c9b4b-56ea-426f-b02d-a4f4b63daf9a}">
+		<relationship name="effectChain">
+			<destination>{39614853-865b-4453-b1b0-bfeefeebc3b1}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{9ed1ed38-ded9-4a64-b755-ae413c52b58a}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{26e6b587-1cab-4a48-a461-d9d5b890412f}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{f343f155-39fc-4445-8c05-0e822238f760}">
+		<property name="isPersistent">
+			<value>true</value>
+		</property>
+	</object>
+	<object class="MarkerTrack" id="{26ebfb31-c40d-4db2-9c4c-75b23b885f01}" />
+	<object class="Timeline" id="{c4f45b80-30a0-419e-b9de-d43f1151c6d2}" />
+	<object class="EventMixerMaster" id="{182650ca-2131-4664-b3b7-9b0a9267886e}">
+		<relationship name="effectChain">
+			<destination>{1763cbd0-8f18-4e2e-88f9-a7598b84c782}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{e975cb71-82b3-4873-b5e4-4467d52ffc80}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{22f70930-6431-4e7a-bc92-cf044bf1efbc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{39614853-865b-4453-b1b0-bfeefeebc3b1}">
+		<relationship name="effects">
+			<destination>{c098b662-7652-4d67-833d-b5ab87ecb36a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{9ed1ed38-ded9-4a64-b755-ae413c52b58a}" />
+	<object class="MixerBusEffectChain" id="{1763cbd0-8f18-4e2e-88f9-a7598b84c782}">
+		<relationship name="effects">
+			<destination>{8ae5b35d-3a26-465d-bef3-08c48203803a}</destination>
+			<destination>{7923e21b-c8d2-49e7-9c4c-fc483d7d1016}</destination>
+			<destination>{e83ca8cd-d761-4e74-934e-70545c130d01}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{e975cb71-82b3-4873-b5e4-4467d52ffc80}" />
+	<object class="MixerBusFader" id="{c098b662-7652-4d67-833d-b5ab87ecb36a}" />
+	<object class="TransceiverEffect" id="{8ae5b35d-3a26-465d-bef3-08c48203803a}" />
+	<object class="MixerBusFader" id="{7923e21b-c8d2-49e7-9c4c-fc483d7d1016}" />
+	<object class="SpatialiserEffect" id="{e83ca8cd-d761-4e74-934e-70545c130d01}">
+		<property name="maximumDistance">
+			<value>3</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
+</objects>
