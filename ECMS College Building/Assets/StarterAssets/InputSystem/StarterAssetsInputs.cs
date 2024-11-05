@@ -19,6 +19,11 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+		Animator ani; 
+		private void Start()
+		{
+			ani = GetComponent<Animator>(); 
+		}
 
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
@@ -49,6 +54,24 @@ namespace StarterAssets
 		public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
+			// Check for forward or sideways movement
+			if (move.y > 0.5 || Mathf.Abs(move.x) > 0.5)
+			{
+				ani.SetBool("isMoving", true);
+			//	ani.SetBool("isWalkingBackward", false);
+			}
+			// Check for backward movement
+			else if (move.y < -0.5)
+			{
+				ani.SetBool("isMoving", true);
+			//	ani.SetBool("isWalkingBackward", true);
+			}
+			else
+			{
+				ani.SetBool("isMoving", false);
+			//	ani.SetBool("isWalkingBackward", false);
+			}
+			
 		} 
 
 		public void LookInput(Vector2 newLookDirection)

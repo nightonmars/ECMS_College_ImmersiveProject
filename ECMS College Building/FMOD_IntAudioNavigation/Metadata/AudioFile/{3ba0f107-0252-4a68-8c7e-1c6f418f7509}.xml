@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3ba0f107-0252-4a68-8c7e-1c6f418f7509}">
+		<property name="assetPath">
+			<value>FootstepsRock/StLeo_Footstep_Rock_03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.30687500000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9848a549-fbf3-44a4-ab96-f5ad31ac7d38}</destination>
+		</relationship>
+	</object>
+</objects>

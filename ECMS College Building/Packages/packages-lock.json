@@ -1,7 +1,13 @@
 {
   "dependencies": {
+    "com.atmoky.truespatial-fmod": {
+      "version": "file:/Volumes/Home 2TB SSD/Users/johan/OldDocuments/Unity & Fmod/Unity packages/Atmoky/com.atmoky.truespatial-fmod-2.0.1.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
     "com.unity.burst": {
-      "version": "1.8.16",
+      "version": "1.8.17",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -11,7 +17,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.cinemachine": {
-      "version": "2.10.0",
+      "version": "2.10.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -34,7 +40,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.28",
+      "version": "3.0.31",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -88,9 +94,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.settings-manager": "1.0.3",
+        "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.imgui": "1.0.0"
+        "com.unity.settings-manager": "1.0.3"
       },
       "url": "https://packages.unity.com"
     },
@@ -173,9 +179,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"
