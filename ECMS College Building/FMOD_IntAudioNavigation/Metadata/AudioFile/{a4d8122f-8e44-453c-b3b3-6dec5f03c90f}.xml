@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a4d8122f-8e44-453c-b3b3-6dec5f03c90f}">
+		<property name="assetPath">
+			<value>Sliding Door 1B.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6.8266666666666671</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9848a549-fbf3-44a4-ab96-f5ad31ac7d38}</destination>
+		</relationship>
+	</object>
+</objects>

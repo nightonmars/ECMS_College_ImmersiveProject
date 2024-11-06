@@ -5,7 +5,7 @@
 			<value>RoomtoneCorridor</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{969a38b5-28f1-4a5d-8e96-f24ee4bbc248}</destination>
@@ -66,12 +66,16 @@
 		<relationship name="modules">
 			<destination>{702c838b-ab08-4adc-b884-352967513e69}</destination>
 			<destination>{f52d1966-cb18-4be9-b384-1d2a41e30f8b}</destination>
+			<destination>{7fd4fadd-da1d-4f78-9890-82340a8c0399}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{f65f61f0-4247-4a1c-9378-d10541634767}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{55ce6bd4-f632-497f-bc11-710dbd472b84}">
+		<relationship name="modules">
+			<destination>{7fd4fadd-da1d-4f78-9890-82340a8c0399}</destination>
+		</relationship>
 		<relationship name="markers">
 			<destination>{6100d38d-d718-4980-9c44-c9339b8102cc}</destination>
 		</relationship>
@@ -122,9 +126,20 @@
 			<destination>{a55d1a5e-9e16-44e4-984c-9cb519447f89}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{7fd4fadd-da1d-4f78-9890-82340a8c0399}">
+		<property name="length">
+			<value>20.954291666666666</value>
+		</property>
+		<property name="volume">
+			<value>10</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{214c408b-adb8-4b5f-a12a-a22d1dd9795a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{f65f61f0-4247-4a1c-9378-d10541634767}">
 		<property name="volume">
-			<value>4.5</value>
+			<value>3</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -141,10 +156,10 @@
 	</object>
 	<object class="LoopRegion" id="{6100d38d-d718-4980-9c44-c9339b8102cc}">
 		<property name="position">
-			<value>58.88928620474406</value>
+			<value>6</value>
 		</property>
 		<property name="length">
-			<value>10.240699353672497</value>
+			<value>10</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{55ce6bd4-f632-497f-bc11-710dbd472b84}</destination>
@@ -188,6 +203,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{f658c986-7f09-43cc-963c-ab29edc0a298}">
 		<relationship name="effects">
+			<destination>{aa13f53c-e83b-4a82-bd9e-dd8a55df5164}</destination>
 			<destination>{5d940431-4bba-4050-a676-67a70dae9683}</destination>
 		</relationship>
 	</object>
@@ -247,6 +263,11 @@
 			<value>1</value>
 		</property>
 	</object>
+	<object class="DistortionEffect" id="{aa13f53c-e83b-4a82-bd9e-dd8a55df5164}">
+		<property name="level">
+			<value>0.514999986</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{5d940431-4bba-4050-a676-67a70dae9683}" />
 	<object class="Plugin" id="{d25538b8-2657-40aa-8fd0-c682e55a8486}">
 		<property name="identifier">
@@ -264,7 +285,6 @@
 		<property name="name">
 			<value>3DAttributes</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>

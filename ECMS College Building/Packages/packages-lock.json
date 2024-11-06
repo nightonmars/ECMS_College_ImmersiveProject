@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.atmoky.truespatial-fmod": {
-      "version": "file:/Volumes/Home 2TB SSD/Users/johan/OldDocuments/Unity & Fmod/Unity packages/Atmoky/com.atmoky.truespatial-fmod-2.0.1.tgz",
+      "version": "file:/Users/protools/Downloads/Atmoky/com.atmoky.truespatial-fmod-2.0.1.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}

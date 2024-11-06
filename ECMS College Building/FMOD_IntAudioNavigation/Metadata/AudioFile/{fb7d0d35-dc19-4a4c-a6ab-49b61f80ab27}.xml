@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fb7d0d35-dc19-4a4c-a6ab-49b61f80ab27}">
+		<property name="assetPath">
+			<value>Keyboard and Mouse_Keyboard and Mouse-St.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16.857414965986393</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9848a549-fbf3-44a4-ab96-f5ad31ac7d38}</destination>
+		</relationship>
+	</object>
+</objects>
