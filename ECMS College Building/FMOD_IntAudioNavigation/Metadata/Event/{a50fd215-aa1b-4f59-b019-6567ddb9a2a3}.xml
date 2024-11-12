@@ -81,6 +81,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{2c2199c6-a593-4b81-8d58-9082db252f11}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{da751580-6620-41d6-a42a-a804eaacb224}</destination>
 		</relationship>
@@ -139,7 +142,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{f65f61f0-4247-4a1c-9378-d10541634767}">
 		<property name="volume">
-			<value>3</value>
+			<value>10</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -174,7 +177,6 @@
 	<object class="MixerBusEffectChain" id="{da751580-6620-41d6-a42a-a804eaacb224}">
 		<relationship name="effects">
 			<destination>{15eec19b-b277-4447-b0f6-91a86d628a3b}</destination>
-			<destination>{53fd026e-e8be-4aec-b796-48ee837ad748}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2d796b3a-0709-4396-bd88-d77d16f060ae}" />
@@ -220,11 +222,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{15eec19b-b277-4447-b0f6-91a86d628a3b}" />
-	<object class="PluginEffect" id="{53fd026e-e8be-4aec-b796-48ee837ad748}">
-		<relationship name="plugin">
-			<destination>{d25538b8-2657-40aa-8fd0-c682e55a8486}</destination>
-		</relationship>
-	</object>
 	<object class="AutomationPoint" id="{92076529-9a8f-49e2-b0e1-eab192afd8ed}">
 		<property name="position">
 			<value>0</value>
@@ -269,68 +266,4 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{5d940431-4bba-4050-a676-67a70dae9683}" />
-	<object class="Plugin" id="{d25538b8-2657-40aa-8fd0-c682e55a8486}">
-		<property name="identifier">
-			<value>atmoky AmbisonicRenderer</value>
-		</property>
-		<relationship name="pluginParameters">
-			<destination>{d5c17bce-47c2-44ab-a527-3c6fe21141cb}</destination>
-			<destination>{cb460769-b8a8-4f85-9807-465fc79f30ba}</destination>
-			<destination>{b06c2e63-8ca8-470d-948b-89183dda321c}</destination>
-			<destination>{46426bc7-0a7d-4245-9b45-811c989ea4d9}</destination>
-			<destination>{45013f91-0d99-474f-8d1e-ce88c5e1017a}</destination>
-		</relationship>
-	</object>
-	<object class="DataPluginParameter" id="{d5c17bce-47c2-44ab-a527-3c6fe21141cb}">
-		<property name="name">
-			<value>3DAttributes</value>
-		</property>
-		<property name="dataType">
-			<value>-2</value>
-		</property>
-	</object>
-	<object class="BoolPluginParameter" id="{cb460769-b8a8-4f85-9807-465fc79f30ba}">
-		<property name="name">
-			<value>headlocked</value>
-		</property>
-		<property name="value">
-			<value>false</value>
-		</property>
-	</object>
-	<object class="FloatPluginParameter" id="{b06c2e63-8ca8-470d-948b-89183dda321c}">
-		<property name="name">
-			<value>MinDistance</value>
-		</property>
-		<property name="value">
-			<value>1</value>
-		</property>
-		<property name="curve">
-			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>
-		</property>
-	</object>
-	<object class="FloatPluginParameter" id="{46426bc7-0a7d-4245-9b45-811c989ea4d9}">
-		<property name="name">
-			<value>MaxDistance</value>
-		</property>
-		<property name="value">
-			<value>500</value>
-		</property>
-		<property name="curve">
-			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>
-		</property>
-	</object>
-	<object class="IntPluginParameter" id="{45013f91-0d99-474f-8d1e-ce88c5e1017a}">
-		<property name="name">
-			<value>DistRolloff</value>
-		</property>
-		<property name="value">
-			<value>0</value>
-		</property>
-		<property name="minimumValue">
-			<value>0</value>
-		</property>
-		<property name="maximumValue">
-			<value>4</value>
-		</property>
-	</object>
 </objects>

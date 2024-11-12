@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.atmoky.truespatial-fmod": {
-      "version": "file:/Users/protools/Downloads/Atmoky/com.atmoky.truespatial-fmod-2.0.1.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
     "com.unity.burst": {
       "version": "1.8.17",
       "depth": 1,

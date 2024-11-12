@@ -64,9 +64,9 @@
 	<object class="MarkerTrack" id="{2bdb59d0-20f4-4519-8345-960e0d82e8e6}" />
 	<object class="GroupTrack" id="{e3d2a595-57cf-4479-b21f-da663fe11d4d}">
 		<relationship name="modules">
-			<destination>{79910238-0a58-4df7-bba5-01993f1e47c1}</destination>
 			<destination>{44c79840-c48b-4770-89b5-98e7b120a034}</destination>
 			<destination>{97e6c7c9-8f52-486d-961e-7fbca4e5ad2b}</destination>
+			<destination>{f92040e2-09d6-494c-b6fb-8533e7d4e5e3}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{fa2606c5-921a-4d1b-b8d2-e122fc3d4e02}</destination>
@@ -74,7 +74,7 @@
 	</object>
 	<object class="Timeline" id="{fc74e7fd-2cc6-4ce6-9e56-b0acd95f35ae}">
 		<relationship name="modules">
-			<destination>{79910238-0a58-4df7-bba5-01993f1e47c1}</destination>
+			<destination>{f92040e2-09d6-494c-b6fb-8533e7d4e5e3}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{6e17cc86-836a-4c68-a54b-6109502f10a4}</destination>
@@ -113,14 +113,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9d9cb701-6321-4137-a4b0-e1a2ac087d45}" />
-	<object class="SingleSound" id="{79910238-0a58-4df7-bba5-01993f1e47c1}">
-		<property name="length">
-			<value>157.02354166666666</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{1540a15d-d4d3-4048-828f-ddec63426f51}</destination>
-		</relationship>
-	</object>
 	<object class="TransitionSourceSound" id="{44c79840-c48b-4770-89b5-98e7b120a034}">
 		<property name="length">
 			<value>8</value>
@@ -137,9 +129,20 @@
 			<destination>{0fbb453e-c14f-4d42-a933-abada72f8381}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{f92040e2-09d6-494c-b6fb-8533e7d4e5e3}">
+		<property name="length">
+			<value>20.954291666666666</value>
+		</property>
+		<property name="volume">
+			<value>10</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{214c408b-adb8-4b5f-a12a-a22d1dd9795a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{fa2606c5-921a-4d1b-b8d2-e122fc3d4e02}">
 		<property name="volume">
-			<value>-4</value>
+			<value>10</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -156,10 +159,10 @@
 	</object>
 	<object class="LoopRegion" id="{6e17cc86-836a-4c68-a54b-6109502f10a4}">
 		<property name="position">
-			<value>100</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>36</value>
+			<value>12</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{fc74e7fd-2cc6-4ce6-9e56-b0acd95f35ae}</destination>
@@ -173,8 +176,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{6a4da26e-47f9-48ff-ae1d-b744e4159102}">
 		<relationship name="effects">
+			<destination>{35270335-a390-4679-a22c-0e656aca2ec9}</destination>
 			<destination>{5e48e079-09f3-4e86-a6a3-f86ac971177a}</destination>
-			<destination>{e03c24a2-a2b7-4c11-ba45-706b20690902}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{33247deb-21b4-484f-896e-966c51ca0159}" />
@@ -218,12 +221,12 @@
 			<destination>{ef381f00-e4a0-496a-a740-8587b7c5e001}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusFader" id="{5e48e079-09f3-4e86-a6a3-f86ac971177a}" />
-	<object class="PluginEffect" id="{e03c24a2-a2b7-4c11-ba45-706b20690902}">
-		<relationship name="plugin">
-			<destination>{32859899-4aa5-451f-be41-d7220205d010}</destination>
-		</relationship>
+	<object class="DistortionEffect" id="{35270335-a390-4679-a22c-0e656aca2ec9}">
+		<property name="level">
+			<value>0.545000017</value>
+		</property>
 	</object>
+	<object class="MixerBusFader" id="{5e48e079-09f3-4e86-a6a3-f86ac971177a}" />
 	<object class="AutomationPoint" id="{588dc552-7744-41a0-b885-22c4caffe4af}">
 		<property name="position">
 			<value>0</value>
@@ -263,68 +266,4 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{8e8fcc6c-91d4-4874-814b-fe8d070e26eb}" />
-	<object class="Plugin" id="{32859899-4aa5-451f-be41-d7220205d010}">
-		<property name="identifier">
-			<value>atmoky AmbisonicRenderer</value>
-		</property>
-		<relationship name="pluginParameters">
-			<destination>{cf044c8c-7fbb-4b8b-9d44-386808568d84}</destination>
-			<destination>{ba3b408e-d414-4bfd-9929-6b28be14c4c1}</destination>
-			<destination>{99667a40-2873-4c23-8f92-7caab4e4e5bd}</destination>
-			<destination>{e20e038f-96d7-47bd-a505-ca77b443bccb}</destination>
-			<destination>{743d693d-cf03-4498-8171-221142931169}</destination>
-		</relationship>
-	</object>
-	<object class="DataPluginParameter" id="{cf044c8c-7fbb-4b8b-9d44-386808568d84}">
-		<property name="name">
-			<value>3DAttributes</value>
-		</property>
-		<property name="dataType">
-			<value>-2</value>
-		</property>
-	</object>
-	<object class="BoolPluginParameter" id="{ba3b408e-d414-4bfd-9929-6b28be14c4c1}">
-		<property name="name">
-			<value>headlocked</value>
-		</property>
-		<property name="value">
-			<value>false</value>
-		</property>
-	</object>
-	<object class="FloatPluginParameter" id="{99667a40-2873-4c23-8f92-7caab4e4e5bd}">
-		<property name="name">
-			<value>MinDistance</value>
-		</property>
-		<property name="value">
-			<value>1</value>
-		</property>
-		<property name="curve">
-			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>
-		</property>
-	</object>
-	<object class="FloatPluginParameter" id="{e20e038f-96d7-47bd-a505-ca77b443bccb}">
-		<property name="name">
-			<value>MaxDistance</value>
-		</property>
-		<property name="value">
-			<value>500</value>
-		</property>
-		<property name="curve">
-			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>
-		</property>
-	</object>
-	<object class="IntPluginParameter" id="{743d693d-cf03-4498-8171-221142931169}">
-		<property name="name">
-			<value>DistRolloff</value>
-		</property>
-		<property name="value">
-			<value>0</value>
-		</property>
-		<property name="minimumValue">
-			<value>0</value>
-		</property>
-		<property name="maximumValue">
-			<value>4</value>
-		</property>
-	</object>
 </objects>
